@@ -1,0 +1,16 @@
+[project]
+name = "whynotrye"
+version = "0.1.1"
+description = "Add your description here"
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.8"
+
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = ["nox>=2023.4.22"]
+
+[tool.rye.workspace]
+members = ["firstpackage", "dependsonfirst"]
